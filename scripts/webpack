@@ -1,0 +1,6 @@
+#!/bin/bash
+ROOT=`pwd`
+WP=./node_modules/.bin/webpack
+rm -rf $ROOT/dist
+env=$1 
+$WP $ROOT/src/magic-bus.ls $ROOT/dist/bundle.js $env --module-bind 'ls=livescript'
