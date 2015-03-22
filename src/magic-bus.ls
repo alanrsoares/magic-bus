@@ -35,3 +35,6 @@ class magic-bus
   raise: @::fire
   trigger: @::fire
   unregister: @::off
+
+
+window.bus = new magic-bus!
